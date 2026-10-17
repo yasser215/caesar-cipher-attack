@@ -1,0 +1,5 @@
+package com.example.caesar_cipher_attack
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity : FlutterActivity()
