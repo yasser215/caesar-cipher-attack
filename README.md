@@ -21,4 +21,11 @@ letter is not always "E".
 
 ## Screenshots
 
+### Empty screen
 ![Empty screen](screenshots/empty.png)
+
+### Successful decryption
+![Result](screenshots/result.png)
+
+### Short message (limitation)
+![Short](screenshots/short.png)
