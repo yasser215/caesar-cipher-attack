@@ -1,17 +1,24 @@
-# caesar_cipher_attack
+# Caesar Cipher Attack - Frequency Analysis
 
-A new Flutter project.
+## Goal
+Decrypt a Caesar-encrypted message without knowing the key
+and without brute force.
 
-## Getting Started
+## Method
+1. Count the frequency of each letter in the ciphertext.
+2. Assume the most frequent letter corresponds to "E"
+   (most frequent letter in English).
+3. Estimated key = (position of most frequent letter - 4) mod 26.
+4. Decrypt each letter with: (position - key + 26) % 26.
 
-This project is a starting point for a Flutter application.
+## Run
+flutter pub get
+flutter run
 
-A few resources to get you started if this is your first Flutter project:
+## Limitation
+Short messages may give a wrong key because the most frequent
+letter is not always "E".
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Screenshots
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Empty screen](screenshots/empty.png)
